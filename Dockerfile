@@ -3,3 +3,4 @@ WORKDIR /app
 ADD . .
 RUN  python setup.py install
 RUN rm -rf *
+RUN pip install pillow
