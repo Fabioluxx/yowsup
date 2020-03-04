@@ -22,8 +22,9 @@ class TextMessageProtocolEntity(ProtomessageProtocolEntity):
 
     def getBody(self):
         #obsolete
-        return self.conversation
+        return self.conversation;
 
     def setBody(self, body):
         #obsolete
-        self.conversation = body
+        #self.conversation = body
+        self.conversation = body.replace("\\n","\n")
